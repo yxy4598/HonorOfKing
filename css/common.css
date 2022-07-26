@@ -1,0 +1,39 @@
+/* common.js公共样式 */
+/* top_wrapper中间包裹的区域 */
+.top_wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* header_wrapper */
+.header_wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* main_wrapper */
+.main_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 精灵图 */
+/* top_sprite */
+.top_sprite {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../img/top_sprite.png) no-repeat;
+  cursor: pointer;
+}
+
+.top_sprite_grow {
+  background-position: -30px 0;
+}
+
+.top_sprite_arrow {
+  background-position: 0 0;
+}

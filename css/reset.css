@@ -1,0 +1,28 @@
+/* reset.css重置样式 */
+/* margin/padding重置 */
+body, h1, h2, ul, ol, li, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 字体重置 */
+body {
+  font-family: "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+}
+
+/* a元素的重置 */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* img的vertical-align重置 */
+img {
+  /* 防止图片因为基线对齐下方会有一条线的空余 */
+  vertical-align: top;
+}
+
+/* ul, ol, li重置 */
+ul, ol, li {
+  list-style: none;
+}
