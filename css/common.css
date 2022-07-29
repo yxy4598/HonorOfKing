@@ -1,4 +1,10 @@
 /* common.js公共样式 */
+
+/* body的公共样式 */
+body {
+  font-family: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+}
+
 /* top_wrapper中间包裹的区域 */
 .top_wrapper {
   width: 980px;
