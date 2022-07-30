@@ -96,6 +96,23 @@ body {
   color: #1e96ab;
 }
 
+/* match 新闻类型图标 */
+.match_news_type {
+  display: inline-block;
+  width: 48px;
+  height: 19px;
+  border-radius: 10px;
+  border: 2px solid #e3e3e3;
+  margin-right: 12px;
+  line-height: 19px;
+  background: #e3e3e3;
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+  text-indent: 2px;
+  overflow: hidden;
+}
+
 /* section_header */
 .section_header {
   display: flex;
@@ -104,9 +121,9 @@ body {
   margin-bottom: 16px;
 }
 
-/* .section_header .header_left {
-  
-} */
+  /* .section_header .header_left {
+    
+  } */
 
 .section_header .header_left .title {
   padding-left: 30px;
