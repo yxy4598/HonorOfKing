@@ -2,7 +2,8 @@
 
 /* body的公共样式 */
 body {
-  font-family: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+  font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+  color: #333;
 }
 
 /* top_wrapper中间包裹的区域 */
@@ -22,6 +23,181 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
+/* 文字不换行显示3行代码 */
+.nowrap_ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 新闻类型的图标 */
+/* .news_type {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+
+.news_type_hot_active {
+  color: #ff3636;
+}
+
+.news_type_notice {
+  color: #f4be19;
+}
+
+.news_type_match {
+  color: #4d9cff;
+}
+
+.news_type_news {
+  color: #1e96ab;
+} */
+
+/* 使用伪元素的方式 */
+.news_type::before {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+
+.news_type_hot::before {
+  content: "热门";
+  color: #ff3636;
+}
+
+.news_type_active::before {
+  content: "活动";
+  color: #ff3636;
+}
+
+.news_type_notice::before {
+  content: "公告";
+  color: #f4be19;
+}
+
+.news_type_match::before {
+  content: "赛事";
+  color: #4d9cff;
+}
+
+.news_type_news::before {
+  content: "新闻";
+  color: #1e96ab;
+}
+
+/* section_header */
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-bottom: 16px;
+}
+
+/* .section_header .header_left {
+  
+} */
+
+.section_header .header_left .title {
+  padding-left: 30px;
+  font-size: 22px;
+  color: #323235;
+  background: url(../img/main_sprite.png) no-repeat 0 -102px;
+}
+
+.section_header .header_right {
+  display: flex;
+  align-items: center;
+}
+
+.section_header .header_left .title_icon_match {
+  background-position: -3px -180px;
+}
+.section_header .header_right .more {
+  display: block;
+  padding-left: 22px;
+  color: #999;
+  background: url(../img/main_sprite.png) no-repeat -252px 4px;
+}
+
+.section_header .header_right .more:hover {
+  color: #f3c258;
+}
+
+/* tab_control */
+.tab_control {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-bottom: 8px;
+  line-height: 29px;
+  background: #f5f5f5;
+}
+
+.tab_control > .item {
+  flex: 1;
+  /* 因为 开启了 flex布局 设置了align-items为center 在hover状态下增加border-bottom相当于增加宽度 */
+  border-bottom: 3px solid transparent;
+  text-align: center;
+  color: #999;
+  cursor: pointer;
+}
+
+.tab_control > .item.item_wrap {
+  /* 一个无单位数 (<number>): 它会被当作flex:<number> 1 0; <flex-shrink>的值被假定为 1，然后<flex-basis> 的值被假定为0。 */
+  /* 由于设置了flex的值为0 flex-grow: 0 flex-basis: 0 item包裹的字体就会出现问题 */
+  flex: 0 auto;
+  padding: 0 27px;
+
+}
+
+.tab_control > .item.active,
+.tab_control > .item:hover {
+  border-bottom: 3px solid #f3c258;
+  color: #333;
+}
+
+.tab_control > .line {
+  width: 1px;
+  height: 20px;
+  background: #e1e1e1;
+}
+
+/* tab_keyword */
+.tab_keyword {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tab_keyword > .item {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 12px;
+  margin: 0 8px 10px 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tab_keyword > .item.active,
+.tab_keyword > .item:hover {
+  color: #fff;
+  border-color: #f3c258;
+  background: #f3c258;
+}
+
+
 
 /* 精灵图 */
 /* top_sprite */
