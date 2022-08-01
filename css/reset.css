@@ -1,6 +1,6 @@
 /* reset.css重置样式 */
 /* margin/padding重置 */
-body, h1, h2, h3, ul, ol, li, p {
+body, h1, h2, h3, ul, ol, li, p, dl, dt, dd {
   padding: 0;
   margin: 0;
 }

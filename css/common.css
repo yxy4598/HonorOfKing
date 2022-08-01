@@ -142,7 +142,11 @@ body {
 }
 
 .section_header .header_left .title-icon-hero {
-  background-position: 0 -144px;
+  background-position: 0 -140px;
+}
+
+.section_header .header_left .title-icon-schedule {
+  background-position: -157px -103px;
 }
 
 .section_header .header_right .more {
@@ -243,3 +247,23 @@ body {
 }
 
 /* icon_type */
+.icon_type {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/main_sprite.png) no-repeat;
+  
+  vertical-align: middle;
+}
+
+.icon_type_hot {
+  background-position: -163px -68px;
+}
+
+.icon_type_fans {
+  background-position: -137px -68px;
+}
+
+.icon_type_guard {
+  background-position: -136px -5px;
+}
