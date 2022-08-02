@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+  background: rgba(0,0,0,.8);
+}
+
+.header .area {
+  display: flex;
+  justify-content: space-between;
+  height: 84px;
+}
+
+.header .left-area {
+  display: flex;
+}
+
+.header .left-area .logo a {
+  position: relative;
+  /* 因为先开始没给 left-area设置df的时候,外层块的高度是由当前a元素撑起来的所以设置top无效 */
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+  width: 230px;
+  height: 54px;
+  background: url(../img/logo.png) no-repeat center center;
+  /* background-color: #f00; */
+  text-indent: -9999px;
+}
+
+.header .left-area .nav-list {
+  display: flex;
+  margin-left: 18px;
+}
+
+.header .left-area .nav-list .item {
+  width: 110px;
+  padding-right: 5px;
+}
+
+.header .left-area .nav-list .item:hover,
+.header .left-area .nav-list .item.active {
+  background: url(../img/main_sprite.png) no-repeat;
+}
+
+.header .left-area .nav-list .item a {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 20px;
+  font-size: 18px;
+  color: #c9c9dd;
+  text-align: center;
+}
+
+.header .left-area .nav-list .item:hover a,
+.header .left-area .nav-list .item.active a {
+  color: #e4b653;
+}
+
+.header .left-area .nav-list .item .desc {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #858792;
+}
+
+.header .left-area .nav-list .item:hover .desc,
+.header .left-area .nav-list .item.active .desc{
+  color: #91763f;
+}
+
+.header .right-area {
+  display: flex;
+  align-items: center;
+}
+
+.header .right-area .image {
+  border: 1px solid #d9ad50;
+  border-radius: 42px;
+}
+
+.header .right-area .info {
+  margin-left: 12px;
+}
+
+.header .right-area .info a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.header .right-area .info p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #858792;
+}
+
+.header .dropmenu {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  right: 0;
+  height: 0;
+
+  background: rgba(0,0,0,0.7);
+  overflow: hidden;
+
+  transition: height .3s ease-in-out;
+}
+
+.header:hover .dropmenu {
+  height: 285px;
+}
+
+.header .dropmenu .inner {
+  display: flex;
+  width: 940px;
+  height: 285px;
+  box-sizing: border-box;
+  padding: 15px 0 30px 67px;
+  margin: 0 auto;
+}
+
+.header .dropmenu .inner .list {
+  width: 110px;
+  padding: 2px 2.5px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.header .dropmenu .inner .list .item a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #c9c9dd;
+}
+
+.header .dropmenu .inner .list .item a:hover {
+  color: #f3c258;
+  text-decoration: underline;
+}

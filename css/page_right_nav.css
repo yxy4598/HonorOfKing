@@ -1,0 +1,130 @@
+.right-nav {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 254px;
+  height: 494px;
+
+  background: url(../img/right_nav_bg.png) no-repeat top left;
+}
+
+.right-nav .right-dj {
+  width: 165px;
+  height: 145px;
+  background: url(../img/right_dj.png) no-repeat top center;
+}
+
+.right-nav .right-dj p {
+  position: relative;
+  top: 35px;
+  left: 10px;
+  padding: 1px 0;
+  text-indent: 2px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #62401b;
+}
+
+.right-nav .right-list {
+  position: relative;
+  left: 60px;
+}
+
+.right-nav .right-list .item {
+  width: 117px;
+  height: 38px;
+  margin-top: 1px;
+
+  background: url(../img/right_all.png) no-repeat;
+}
+
+.right-nav .right-list .item.code {
+  height: 134px;
+  background-position: -243px 0;
+}
+
+.right-nav .right-list .item.code img{
+  display: block;
+  width: 107px;
+  height: 107px;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding-top: 3px;
+}
+
+.right-nav .right-list .item .r-code {
+  position: absolute;
+  left: -116px;
+  display: none;
+  width: 115px;
+  height: 144px;
+  margin-top: -50px;
+  background: url(../img/right_all.png) no-repeat 0 -416px;
+}
+
+.right-nav .right-list .item .r-code img {
+  display: block;
+  width: 101px;
+  height: 100px;
+  border-radius: 2px;
+  margin: 5px auto 2px;
+}
+
+.right-nav .right-list .item .r-code p {
+  font-size: 12px;
+  color: #dcdcdc;
+  text-align: center;
+}
+
+.right-nav .right-list .item .r-code p span {
+  color: #cd974b
+}
+
+.right-nav .right-list .item.r-yd {
+  background-position: -243px -134px;
+}
+
+.right-nav .right-list .item.r-yd:hover {
+  background-position: -243px -172px;
+}
+
+.right-nav .right-list .item.r-yd:hover .r-code {
+  display: block;
+}
+
+.right-nav .right-list .item.r-weibo {
+  background-position: -122px -120px;
+}
+
+.right-nav .right-list .item.r-weibo:hover {
+  background-position: -122px -240px;
+}
+
+.right-nav .right-list .item.r-weibo:hover .r-code {
+  display: block;
+}
+
+.right-nav .right-list .item.r-gzh {
+  background-position: -122px -160px;
+}
+
+.right-nav .right-list .item.r-gzh:hover {
+  background-position: -122px -200px;
+}
+
+.right-nav .right-list .item.r-gzh:hover .r-code{
+  display: block;
+}
+
+.right-nav .right-list .item.r-sph {
+  background-position: -122px 0;
+}
+
+.right-nav .right-list .item.r-sph:hover {
+  background-position: -122px -42px;
+}
+
+.right-nav .right-list .item.r-sph:hover .r-code{
+  display: block;
+}
