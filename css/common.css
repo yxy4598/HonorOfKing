@@ -4,6 +4,9 @@
 body {
   font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
   color: #333;
+
+  /* 设置 缩小后拉伸页面 CSS样式消失 */
+  min-width: 1300px;
 }
 
 /* top_wrapper中间包裹的区域 */
