@@ -1,7 +1,12 @@
 .main {
-  width: 100%;
-  height: 1300px;
-  background: url(../img/main_bg.jpg) no-repeat center top;
+  /* width: 100%;
+  height: 1300px; */
+  background: url(../img/main_bg.jpg) no-repeat center top/100%;
+
+  /* 设置 背景图片 根据拉伸 缩放 */
+  /* 第一个值指定图片的宽度，第二个值指定图片的高度:默认情况下就是auto */
+  /* 可以直接写缩写属性 */
+  /* background-size: 100% auto; */
 }
 
 .main .link {
